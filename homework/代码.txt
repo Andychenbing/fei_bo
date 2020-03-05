@@ -1,23 +1,24 @@
 #include<iostream>
 using namespace std;
-
-int  Fibonacci(int n)
+class  Fibonacci
 {
-	if (n <= 0)
-		return 0;
-	else if (n == 1)
-		return 1;
-	else
-		return  Fibonacci(n - 1) + Fibonacci(n - 2);
-}
+public:
+	int of(int n)
+	{
+		double gold = (1 + sqrt(5)) / 2;
+		return (int)round(pow(gold, n) / sqrt(5));
+	}
+};
+
 
 int main()
 {
+	Fibonacci Fibonacci;
 	int N = 1;
 	while(N<=200)
 	{
-		cout << Fibonacci(N) << ' ';
+		cout << Fibonacci.of(N) << ' ';
 		N++;
 	}
-	return 0;
+	system("pause");
 }
