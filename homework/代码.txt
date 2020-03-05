@@ -20,5 +20,5 @@ int main()
 		cout << Fibonacci.of(N) << ' ';
 		N++;
 	}
-	system("pause");
+	return 0;
 }
